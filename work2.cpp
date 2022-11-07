@@ -68,7 +68,8 @@ int main(){
         cout<<"Nhap so luong hoc sinh " ;
         cin>>n;
     } while(n<0||n>100);
-    SINHVIEN a[n];
+    SINHVIEN *a;
+    a = new SINHVIEN[n];
     cin.ignore();
     sv.nhapN(n,a);
     sv.xapsep(n,a);
